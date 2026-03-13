@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Only Fans e Busologos</title>
+  <style>
+    :root {
+      --bg: #eef5f1;
+      --panel: #ffffff;
+      --ink: #18332b;
+      --accent: #0c7c59;
+      --accent-2: #f28f3b;
+      --line: #cfe3d9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: radial-gradient(circle at top, #f9fffc 0%, var(--bg) 55%, #ddebe5 100%);
+      color: var(--ink);
+    }
+
+    header {
+      padding: 56px 20px 36px;
+      text-align: center;
+      background: linear-gradient(135deg, #dff6ec, #f7fcfa);
+      border-bottom: 4px solid var(--accent);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      letter-spacing: 1px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 16px auto 0;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(980px, calc(100% - 32px));
+      margin: 32px auto 48px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 14px 30px rgba(12, 124, 89, 0.08);
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.35rem;
+    }
+
+    p,
+    li {
+      line-height: 1.7;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .hero-card {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1.3fr 0.9fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .badge {
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #e4f3ec;
+      border: 1px solid #b8d6c7;
+      font-size: 0.95rem;
+    }
+
+    .fan-illustration {
+      min-height: 220px;
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at center, #ffffff 0 22px, #9bc8b3 23px 30px, transparent 31px),
+        conic-gradient(from 0deg, #7bc6a4 0 25%, transparent 25% 50%, #7bc6a4 50% 75%, transparent 75% 100%),
+        radial-gradient(circle at center, #effaf5 0%, #d4ece1 68%, #b6d9ca 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .fan-illustration::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 18px;
+      width: 16px;
+      height: 90px;
+      transform: translateX(-50%);
+      background: linear-gradient(#6f8f82, #4f695f);
+      border-radius: 10px;
+      box-shadow: 0 90px 0 24px #6f8f82;
+    }
+
+    .callout {
+      border-left: 5px solid var(--accent-2);
+      background: #fff9f1;
+    }
+
+    .back-link {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto 48px;
+    }
+
+    .back-link a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 760px) {
+      .hero-card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Only Fans e Busologos</h1>
+    <p>
+      Uma pagina para quem admira o vento bem distribuido por um ventilador honesto
+      e tambem para quem sabe identificar um onibus pelo ronco do motor, pela pintura
+      ou pelo modelo da carroceria.
+    </p>
+  </header>
+
+  <main>
+    <section class="hero-card">
+      <div>
+        <h2>O verdadeiro Only Fans</h2>
+        <p>
+          Aqui o foco e literal: ventiladores de teto, de coluna, de mesa e qualquer
+          maquina que entregue ventilacao de qualidade nos dias quentes. Barulho certo,
+          grade bem desenhada e helices equilibradas fazem parte do charme.
+        </p>
+        <div class="badge-row">
+          <span class="badge">Ventiladores classicos</span>
+          <span class="badge">Colecionismo curioso</span>
+          <span class="badge">Busologia raiz</span>
+        </div>
+      </div>
+      <div class="fan-illustration" aria-hidden="true"></div>
+    </section>
+
+    <section>
+      <h2>Por que so ventiladores?</h2>
+      <p>
+        Porque existe beleza em objetos simples que funcionam bem. Um bom ventilador
+        mistura engenharia, durabilidade e personalidade. Tem modelo silencioso,
+        tem modelo bruto, e tem aqueles antigos que parecem reliquia industrial.
+      </p>
+    </section>
+
+    <section>
+      <h2>Manual do fa de ventiladores</h2>
+      <ul>
+        <li>Observa o desenho das helices e a forca do fluxo de ar.</li>
+        <li>Repara no som do motor e no acabamento da grade.</li>
+        <li>Valoriza modelos antigos que ainda funcionam firme.</li>
+        <li>Discute com seriedade coisas que a maioria nem nota.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Busologos em acao</h2>
+      <p>
+        Busologo nao olha um onibus como objeto comum. Ele presta atencao na frota,
+        no chassi, na carroceria, no itinerario e nas historias de cada linha. E um
+        olhar detalhista sobre transporte, memoria urbana e design funcional.
+      </p>
+    </section>
+
+    <section class="callout">
+      <h2>Ponto em comum</h2>
+      <p>
+        Ventiladores e onibus podem parecer assuntos aleatorios, mas os dois reúnem
+        gente que gosta de mecanica, funcionamento, identidade visual e detalhes que
+        passam batido para quase todo mundo.
+      </p>
+    </section>
+
+    <section>
+      <h2>Curiosidades</h2>
+      <ul>
+        <li>Ha quem reconheca ventilador antigo so pelo formato da grade.</li>
+        <li>Ha quem identifique onibus de longe pelo conjunto farol e frente.</li>
+        <li>Os dois temas criam comunidades apaixonadas por catalogar modelos.</li>
+      </ul>
+    </section>
+  </main>
+
+  <div class="back-link">
+    <a href="index.html">Voltar para o portfólio coletivo</a>
+  </div>
+</body>
+</html>
